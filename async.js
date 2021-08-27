@@ -5,7 +5,7 @@ const url = "https://jsonplaceholder.typicode.com/users";
 
 function fetchLink(url) {
     fetch(url) 
-        .then (res=>res.json());
+        .then (res=>res.json())
         .then (json=>{
             let output= "";
             for(let user of json) {
